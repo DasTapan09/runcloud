@@ -100,7 +100,7 @@ async function run() {
         // ✅ Determine Base URL
         const baseUrl =
             environment.toLowerCase() === "qa"
-                ? "https://sedstart.sedinqa.com"
+                ? "https://test.app.sedstart.sedinqa.com"
                 : "https://app.sedstart.com";
 
         const url = `${baseUrl}/api/project/${projectId}/runCI`;
