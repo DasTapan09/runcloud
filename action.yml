@@ -13,11 +13,14 @@ inputs:
     description: "Project ID"
     required: true
   test_id:
-    description: "Test ID"
-    required: true
+    description: "Test ID (mutually exclusive with suite_id)"
+    required: false
+  suite_id:
+    description: "Suite ID (mutually exclusive with test_id)"
+    required: false
   profile_id:
     description: "Profile ID"
-    required: true
+    required: false
   browser:
     description: "Browser to run the test (e.g., chrome)"
     required: true
